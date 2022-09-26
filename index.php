@@ -1,15 +1,8 @@
-<?php
+<?php 
 
-class Movies {
-   public $title;
-   public $year;
-   public $genre;
+include __DIR__ . './movie.php';
 
- function __construct($title,$year,$genre) 
- {
-    $this->title = $title;
-    $this->year = $year;
-    $this->genre = $genre;
- }
+$interstellar = new Movie('Interstellar', 'Christopher Nolan', '2014', 'avventura-fantascienza');
 
-}
+var_dump($interstellar);
+echo $interstellar->getMovie();
