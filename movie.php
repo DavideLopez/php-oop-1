@@ -15,7 +15,7 @@ class Movies {
  }
 
 public function getMovie() {
-    return $this->title . 'è un film ' $this->genre . 'girato nel ' $this->year . 'dal regista ' . $this->director . ;
+    return $this->title . ' è un film di genere: '. $this->genre . ' girato nel ' . $this->year . ' dal regista ' . $this->director . '<br> ' ;
  }
 
 }
